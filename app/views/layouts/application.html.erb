@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>    <title>Contacts</title>
+    <title>Contacts</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+  </head>
+
+  <body>
+    <div class="navbar-fixed">
+      <nav class="light-blue">
+        <div class="nav-wrapper">
+          <ul class="left">
+            <li><%= link_to 'Contacts', '/contacts' %></li>
+            <li><%= link_to 'Companies', '/companies' %></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="container">
+      <%= yield %>
+      </div>
+  </body>
+</html>
